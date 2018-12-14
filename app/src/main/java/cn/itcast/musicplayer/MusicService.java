@@ -20,12 +20,12 @@ public class MusicService extends Service {
                     // 准备播放
                     mediaPlayer.prepare();
                     mediaPlayer.setOnPreparedListener(new
-                                                              MediaPlayer.OnPreparedListener() {
-                                                                  public void onPrepared(MediaPlayer mp) {
-                                                                      // 开始播放
-                                                                      mediaPlayer.start();
-                                                                  }
-                                                              });
+                          MediaPlayer.OnPreparedListener() {
+                              public void onPrepared(MediaPlayer mp) {
+                                  // 开始播放
+                                  mediaPlayer.start();
+                              }
+                          });
                 } else {
                     int position = getCurrentProgress();
                     mediaPlayer.seekTo(position);
